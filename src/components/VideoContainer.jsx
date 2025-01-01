@@ -38,7 +38,6 @@ const VideoContainer = () => {
             <VideoCard info={video} />
           </Link>
         )
-
       ))}
     </div>
   )

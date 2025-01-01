@@ -32,7 +32,7 @@ const WatchPage = () => {
           <LiveChat />
         </div>
       </div>
-      <CommentsContainer />
+      <CommentsContainer videoID={searchParams.get('v')} />
     </div>
   )
 }

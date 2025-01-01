@@ -8,6 +8,12 @@ export const YOUTUBE_API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
 
 export const YOUTUBE_VIDEOS_API = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=' + YOUTUBE_API_KEY;
 
+export const YOUTUBE_COMMENT_API = "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&key="
++ YOUTUBE_API_KEY + "&videoId=";
+
+export const YOUTUBE_REPLY_COMMENT_API = "https://www.googleapis.com/youtube/v3/comments?part=snippet&key="+ YOUTUBE_API_KEY + "&parentId=";
+
+
 export const SEARCH_YOUTUBE_VIDEOS_API = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&type=video&q=';
 
 export const YOUTUBE_SEARCH_SUGGESTION_API = 'https://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=';
